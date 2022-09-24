@@ -1,0 +1,130 @@
+:root {
+  --fuente: "Akaya Telivigala", cursive;
+  --fuente2: "Righteous", cursive;
+  --magenta: #a5112e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+}
+
+header {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 350px;
+  height: 100px;
+  text-align: center;
+  background-color: black;
+}
+header h1 {
+  font-family: var(--fuente);
+  color: white;
+  font-size: 2.9rem;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  align-self: center; /* Esta es la forma de alinear un elemento para que quede en el centro cuando su padre es flex (Por eso no se pone alaing itemns)*/
+  margin-right: 25px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer; /* Cuando pase el cursor encima salga la manita*/
+}
+
+main nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fffacd;
+  height: 30px;
+  align-items: center;
+}
+
+main nav a {
+  color: var(--magenta);
+  font-family: var(--fuente2);
+  font-size: 2rem;
+}
+
+main p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+main .contenedor {
+  width: 100%;
+  height: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main .contenedor .contenedor_form {
+  width: 70%;
+  height: auto;
+  background-color: var(--magenta);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 25px;
+}
+main .contenedor_form label {
+  font-size: 1.5rem;
+  color: white;
+}
+main .contenedor_form input {
+  margin-top: 25px;
+  padding: 5px;
+  border: 2px #000000 solid;
+  border-radius: 10px;
+}
+button {
+  cursor: pointer;
+}
+main button {
+  display: inline-block;
+  width: 170px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.6rem;
+  
+}
+
+button .icon_button img {
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
+}

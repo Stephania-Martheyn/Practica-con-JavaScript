@@ -1,0 +1,217 @@
+:root {
+  --fuente: "Righteous", cursive;
+  --Azul-light: #6495ED;
+  --Naranjita: #D2691E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+}
+
+header {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 50px;
+  text-align: center;
+  background-color: orange;
+}
+header h1 {
+  color: white;
+  margin-left: 25px;
+  font-family: var(--fuente);
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  align-self: center; /* Esta es la forma de alinear un elemento para que quede en el centro cuando su padre es flex (Por eso no se pone alaing itemns)*/
+  margin-right: 25px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer; /* Cuando pase el cursor encima salga la manita*/
+}
+
+main nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFFACD;
+  height: 30px;
+  align-items: center;
+}
+
+main nav a{
+  color: #778899;
+  font-family: var(--fuente);
+  font-size:2rem;
+}
+
+main p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom:70px;
+}
+main .main-container-1 {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  border: 4px dotted var(--Azul-light);
+}
+main .main-container-1 h2 {
+  text-align: center;
+  align-self: center;
+  margin-bottom: 26px;
+  font-family: var(--fuente);
+  font-size: 1.7rem;
+  margin-top: 20px;
+  color: var(--Azul-light);
+}
+main .main-container-1 label {
+  font-size: 1.2rem;
+  
+
+}
+main .main-container-1 input {
+ display:block;
+ margin: 0 auto;
+ margin-top:20px;
+ background-color: #B0C4DE;
+ padding:5px;
+ border:none;
+ 
+
+}
+main .main-container-1 button {
+  display: inline-block;
+  margin: 25px 3px 15px 3px;
+  border: none;
+  background-color: var(--Azul-light);
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+ 
+}
+
+/*----------parte 2-----------*/
+
+main .main-container-2 {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  border: 4px dotted #D2691E;
+  margin-top:40px;
+}
+main .main-container-2 h2 {
+  text-align: center;
+  align-self: center;
+  margin-bottom: 26px;
+  font-family: var(--fuente);
+  font-size: 1.7rem;
+  margin-top: 20px;
+  color: orange;
+}
+main .main-container-2 label {
+  font-size: 1.2rem;
+  
+
+}
+main .main-container-2 input {
+ display:block;
+ margin: 0 auto;
+ margin-top:20px;
+ background-color:  #ffdb99;
+ padding:5px;
+ border:none;
+ 
+
+}
+main .main-container-2 button {
+  display: inline-block;
+  margin: 25px 3px 15px 3px;
+  border: none;
+  background-color: orange;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+ 
+}
+
+/*------------Parte 3------------*/
+
+
+main .main-container-3 {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  border: 4px dotted #dc143c;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+main .main-container-3 h2 {
+  text-align: center;
+  align-self: center;
+  margin-bottom: 26px;
+  font-family: var(--fuente);
+  font-size: 1.7rem;
+  margin-top: 20px;
+  color: #dc143c;
+}
+main .main-container-3 label {
+  font-size: 1.2rem;
+  
+
+}
+main .main-container-3 input {
+ display:block;
+ margin: 0 auto;
+ margin-top:20px;
+ background-color:#ff9999;
+ padding:5px;
+ border:none;
+ 
+
+}
+button {
+  cursor: pointer;
+}
+
+main .main-container-3 button {
+  display: inline-block;
+  margin: 25px 3px 15px 3px;
+  border: none;
+  background-color: #dc143c;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+ 
+}

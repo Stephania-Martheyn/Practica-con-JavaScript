@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Links-->
+    <link rel="stylesheet" href="./css/styles3.css" />
+    <title>Calculador</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/promedio.png" alt="Figuras" />
+      <h1>Carlulador de Promedio, Media y Moda</h1>
+    </header>
+
+    <main>
+      <nav class="Navegar_talleres">
+        <a href="./figuras.html">Taller 1</a>
+        <a href="./porcentajeYdescuentos.html">Taller 2</a>
+        <a href="./prom_med_moda.html">Taller 3</a>
+      </nav>
+      <p>¡Este es el tercer taller del curso practico de Javascript!</p>
+
+      <section class="contenedor">
+        <p>
+          <span class="icon">&#10024;</span>Ingresa el precio para calcular y
+          descubir cuanto es su descuento <span class="icon">&#10024;</span>
+        </p>
+
+        <section class="contenedor_form">
+          <form action="">
+            <label for="InputProm">¿Cuál es el promedio de esta lista?</label
+            ><br />
+            <input
+              id="InputProm"
+              type="text"
+              placeholder="Ej: 15, 20, 138, 50"
+            /><br /><br />
+            <br />
+            <button type="button" onclick="onClickButtonPromedio()">
+              ¡Averiguemoslo!
+            </button>
+            <p id="ResultP"></p>
+          </form>
+        </section>
+
+        <section class="contenedor_form2">
+          <form action="">
+            <label for="InputMediana">¿Cuál es la mediana de esta lista?</label
+            ><br />
+            <input
+              id="InputMediana"
+              type="text"
+              placeholder="Ej: 15, 20, 138, 50"
+            /><br /><br />
+            <br />
+            <button type="button" onclick="onClickButtonMediana()">
+              ¡Averiguemoslo!
+            </button>
+            <p id="ResultMediana"></p>
+          </form>
+        </section>
+      </section>
+
+      <script src="./prom_med_moda.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+:root {
+  --fuente: "Akaya Telivigala", cursive;
+  --fuente2: "Righteous", cursive;
+  --magenta: #dc143c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+}
+
+header {
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 350px;
+  height: 220px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #7fb6a4 16.69%, #008b8b 100%);
+}
+header h1 {
+  font-family: var(--fuente);
+  color: white;
+  font-size: 2.9rem;
+  margin-bottom: 10px;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  align-self: center; /* Esta es la forma de alinear un elemento para que quede en el centro cuando su padre es flex (Por eso no se pone alaing itemns)*/
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer; /* Cuando pase el cursor encima salga la manita*/
+}
+
+main nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #483d8b;
+  height: 30px;
+  align-items: center;
+}
+
+main nav a {
+  color: white;
+  font-family: var(--fuente2);
+  font-size: 2rem;
+}
+
+main p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+main .contenedor {
+  width: 100%;
+  height: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main .contenedor .contenedor_form {
+  width: 70%;
+  height: auto;
+  background-color: #e3deff;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 25px;
+  border-radius: 45px;
+}
+main .contenedor_form label {
+  font-size: 1.5rem;
+}
+main .contenedor_form input {
+  margin-top: 25px;
+  padding: 5px;
+  border: 2px #483d8b solid;
+  border-radius: 10px;
+}
+
+main .contenedor .contenedor_form2 {
+  width: 70%;
+  height: auto;
+  background-color: #5e5882;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 45px;
+  margin-bottom: 20px;
+}
+main .contenedor_form2 label {
+  font-size: 1.5rem;
+  color: white;
+}
+main .contenedor_form2 input {
+  margin-top: 25px;
+  padding: 5px;
+  border: 2px #483d8b solid;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+main button {
+  display: inline-block;
+  width: 170px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: rgb(204, 173, 216);
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.6rem;
+}
+
+button .icon_button img {
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
+}

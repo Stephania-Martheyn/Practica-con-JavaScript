@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!--Links-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <script src="./figuras.js"></script>
+  <!--Con este ligo el html a un JS-->
+  <title>Figuras</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/formas.png">
+</head>
+
+<body>
+  <header>
+    <h1>Figuras geometricas</h1>
+    <img src="./assets/img/formas.png" alt="Figuras" />
+  </header>
+
+  <main>
+    <nav class="Navegar_talleres">
+      <a href="./figuras.html">Taller 1</a>
+      <a href="./porcentajeYdescuentos.html">Taller 2</a>
+      <a href="./prom_med_moda.html">Taller 3</a>
+    </nav>
+    <p>¡Este es el primer taller del curso practico de Javascript!</p>
+    <section class="main-container-1">
+      <h2>Calcula el area y perimetro de un cuadrado </h2>
+      <form action="">
+        <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label>
+
+        <!--El for sirve para relacionar el id con el labe-->
+        <input id="InputCuadrado" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular área
+        </button>
+      </form>
+    </section>
+
+    <section class="main-container-2">
+      <h2>Calcula el area y perimetro de un triangulo </h2>
+      <form action="">
+        <label for="InputTriangulo">Escribe cuánto mide cada lado de tu triangulo:</label>
+
+        <!--El for sirve para relacionar el id con el labe-->
+        <input id="InputTriangulo" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular área
+        </button>
+      </form>
+    </section>
+
+    <section class="main-container-3">
+      <h2>Calcula el area y perimetro de un circulo </h2>
+      <form action="">
+        <label for="InputCirculo">Escribe cuánto mide cada lado de tu circulo:</label>
+        <!--El for sirve para relacionar el id con el labe-->
+        <input id="InputCirculo" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular área
+        </button>
+      </form>
+    </section>
+
+
+  </main>
+</body>
+
+</html>

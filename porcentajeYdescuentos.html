@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Links-->
+    <link rel="stylesheet" href="./css/styles2.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/etiqueta.png" />
+
+    <script src="./descuentos.js"></script>
+    <!--Con este ligo el html a un JS-->
+    <title>Porcentajes y Descuentos</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/img/etiqueta.png" alt="Figuras" />
+      <h1>Calculando Descuentos</h1>
+    </header>
+
+    <main>
+      <nav class="Navegar_talleres">
+        <a href="./figuras.html">Taller 1</a>
+        <a href="./porcentajeYdescuentos.html">Taller 2</a>
+        <a href="./prom_med_moda.html">Taller 3</a>
+      </nav>
+      <p>¡Este es el segundo taller del curso practico de Javascript!</p>
+
+      <section class="contenedor">
+        <p>
+          <span class="icon">&#10024;</span>Ingresa el precio para calcular y
+          descubir cuanto es su descuento <span class="icon">&#10024;</span>
+        </p>
+
+        <section class="contenedor_form">
+          <form action="">
+            <label for="InputPrice">¿Cuál es el precio?</label><br />
+            <input id="InputPrice" type="number" /><br /><br />
+           <br><br>
+
+            <label for="InputDiscount">¿Cuál es el porentaje de descuento?</label><br />
+            <input id="InputDiscount" type="number" /><br /><br />
+            <button type="button" onclick="onClickButtonPriceDiscount()">
+              <span class="icon_button"><img src="./assets/img/precio.png" alt="moneda"></span> Descuento<span class="icon_button"><img src="./assets/img/descuento.png" alt="descuento"></span>
+            </button>
+            <p id="ResultP"></p>
+          </form>
+
+         
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
